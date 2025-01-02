@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        h1 {
+            color: #ff9900;
+        }
+        .info {
+            margin: 20px auto;
+            padding: 20px;
+            width: 60%;
+            background-color: #222;
+            border-radius: 10px;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chillays.LOL</h1>
+    <div class="info">
+        <p><strong>IP Address:</strong> {{ data.ip }}</p>
+        <p><strong>Country:</strong> {{ data.country }}</p>
+        <p><strong>City:</strong> {{ data.city }}</p>
+        <p><strong>ISP:</strong> {{ data.isp }}</p>
+        <p><strong>Device Info:</strong> {{ data.user_agent }}</p>
+    </div>
+    <footer>
+    </footer>
+</body>
+</html>
